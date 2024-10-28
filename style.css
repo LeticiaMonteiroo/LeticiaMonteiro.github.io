@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
 }
+button:hover {
+    box-shadow: 0px 8px 8px #FFC95F;
+    transform: scale(1.15);
+
+}
 
 body {
     background-color: pink;
@@ -57,11 +62,11 @@ header a:hover {
     transform: scale(1.20);
 }
 
-.contato button:hover {
+/* .contato button:hover {
     box-shadow: 0px 8px 8px #FFC95F;
     transform: scale(1.15);
 
-}
+} */
 
 header nav ul {
     list-style-type: none;
@@ -177,7 +182,7 @@ section.sobre .flex {
     flex-direction: row;
     align-items: flex-start; /* Alinha o topo dos elementos para melhor organização */
     gap: 40px;
-    padding: 20px 0;
+    padding: 60px 0;
 }
 
 .sobre .img-sobre img {
@@ -207,7 +212,37 @@ section.sobre .flex {
 .sobre .txt-sobre p{
     margin: 20px 20px;
     text-align: justify;
+}
 
+.sobre .txt-sobre .social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    font-size: 22px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*Estilo Meus Trabalhos*/
+
+section.Trabalhos{
+
+    padding: 80px;
+    box-shadow: 0 0 40px 10px white;
 
 }
 
+section.Trabalhos .flex{
+    justify-content: space-around;
+}
+
+.img-trabalho{
+    width: 360px;
+    height: 460px;
+    background-color: #B0041A;
+
+
+}
