@@ -1,87 +1,83 @@
-/*Estilo Geral*/
-*{
-    margin:0;
+/* Estilo Geral */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* justify-content: center;  */
-    /* gap: 20px;  */
-    align-items: center;
-
-
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-
 }
 
-body{
+body {
     background-color: pink;
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
-    margin:0 auto;
-
+    margin: 0 auto;
 }
 
-/*Estilo do Cabeçario*/
+.flex {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
 
+/* Estilo do Cabeçalho */
 header {
-    padding: 20px 0; /* Ajustado para remover o padding lateral */
-    align-items: center;
-    padding-left: 90px;
-    background-color: #ff7b00de ;
-
+    padding: 20px 0; 
+    background-color: #ff7b00de;
 }
 
-header > .interface{
-
+header > .interface {
     display: flex;
     align-items: center;
-
 }
 
-header a{
+header a {
     color: rgb(241, 138, 195);
-    text-decoration: none; /*Para sumir o sublinhado do texto*/
-    display: inline-block;
-    transition: .2s;
+    text-decoration: none;
+    transition: 0.2s;
     font-size: 25px;
 }
 
-header a:hover{
+header a:hover {
     color: rgb(231, 46, 148);
     transform: scale(1.20);
 }
 
-
-header nav ul{
-
+header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
-
+header nav ul li {
     display: inline-block;
     padding: 0 50px;
-
 }
 
-header .contato button{
-
+main .contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: orange;
+    background-color: rgb(255, 110, 26);
+    color: white;
     border: 0;
     border-radius: 30px;
     cursor: pointer; 
-
 }
 
-header .contato button:hover{
+/* Estilo do Topo */
+section.topo-do-site {
+    padding: 40px;
+}
 
-    box-shadow: 0px 0px 8px orangered;
+.topo-do-site h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.img-topo-site img {
+    max-width: 100%; /* A imagem ocupará 100% do espaço disponível */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaço em branco abaixo da imagem */
 }
