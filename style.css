@@ -23,6 +23,16 @@ body {
     gap: 20px; /* Espaçamento entre os itens */
 }
 
+h2.titulo{
+    color:#FFC95F;
+    font-size: 38px;
+    text-align: center;
+
+}
+h2.titulo span{
+    color: #ED9BBD;
+}
+
 /* Estilo do Cabeçalho */
 header {
     padding: 20px 0; 
@@ -39,11 +49,18 @@ header a {
     text-decoration: none;
     transition: 0.2s;
     font-size: 25px;
+    display: inline-block; /* Altere para inline-block */
 }
 
 header a:hover {
-    color: rgb(231, 46, 148);
+    color: #FFC95F;
     transform: scale(1.20);
+}
+
+.contato button:hover {
+    box-shadow: 0px 8px 8px #FFC95F;
+    transform: scale(1.15);
+
 }
 
 header nav ul {
@@ -59,11 +76,13 @@ main .contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgb(255, 110, 26);
-    color: white;
+    background-color:  #B0041A;
+    color: #500711;
+    transition: 0.2s;
     border: 0;
     border-radius: 30px;
     cursor: pointer; 
+
 }
 
 /* Estilo do Topo */
@@ -72,12 +91,100 @@ section.topo-do-site {
 }
 
 .topo-do-site h1 {
-    color: white;
+    color: #B0041A;
     font-size: 42px;
 }
 
+
 .img-topo-site img {
-    max-width: 100%; /* A imagem ocupará 100% do espaço disponível */
-    height: auto; /* Mantém a proporção */
+    max-width: 490px; /* A imagem ocupará 100% do espaço disponível */
+    height: 450px; /* Mantém a proporção */
     display: block; /* Remove espaço em branco abaixo da imagem */
+}
+
+
+.topo-do-site .text-topo-site h1 span{
+
+    color: #500711;
+    font-size: 42px;
+
+}
+
+.topo-do-site .text-topo-site p{
+
+    color: #B0041A;
+    margin: 40px 0;
+
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+} 
+
+/* Estilo para a seção Especialidades */
+section.Especialidades { 
+    padding: 40px 4%;
+}
+section.Especialidades .flex{
+    gap:60px;
+
+}
+
+.Especialidades .especialidadesbox {
+    color: white;
+    padding: 40px;
+    /* border: 2px solid white; */
+    margin-top: 45px;
+    border-radius: 30px;
+    transition: .3s;
+
+    width: 300px; /* Largura padrão */
+    height: 350px; /* Altura padrão */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+.Especialidades .especialidadesbox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+/* Estilos dos ícones dentro das caixas de especialidades */
+.Especialidades .especialidadesbox i {
+    font-size: 70px;
+    color: white;
+}
+
+.Especialidades .especialidadesbox h3{
+    font-size:30px;
+    margin:15px 0;
+}
+
+/* Ajuste na seção sobre */
+section.sobre .flex {
+    flex-direction: row; /* Organiza os elementos em linha */
+    align-items: center; /* Alinha a imagem e o texto ao centro */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.sobre .img-sobre {
+    height: 200px; /* Reduz o tamanho da imagem */
+    width: 200px;
+    flex-shrink: 0; /* Evita que a imagem diminua mais */
+}
+
+.sobre .txt-sobre {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
 }
