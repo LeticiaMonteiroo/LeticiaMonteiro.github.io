@@ -12,7 +12,7 @@ button:hover {
 }
 
 body {
-    background-color: pink;
+    background-color: rgba(255, 192, 203, 0.466);
     height: 100vh;
 }
 
@@ -29,19 +29,19 @@ body {
 }
 
 h2.titulo{
-    color:#FFC95F;
+    color: #B0041A;
     font-size: 38px;
     text-align: center;
 
 }
 h2.titulo span{
-    color: #ED9BBD;
+    color: #86071c;
 }
 
 /* Estilo do Cabeçalho */
 header {
     padding: 20px 0; 
-    background-color: #ff7b00de;
+    background-color: #500711;
 }
 
 header > .interface {
@@ -49,10 +49,12 @@ header > .interface {
     align-items: center;
 }
 
+
 header a {
     color: rgb(241, 138, 195);
     text-decoration: none;
     transition: 0.2s;
+    margin-left: 60px;
     font-size: 25px;
     display: inline-block; /* Altere para inline-block */
 }
@@ -82,7 +84,7 @@ main .contato button {
     font-size: 18px;
     font-weight: 600;
     background-color:  #B0041A;
-    color: #500711;
+    color: pink;
     transition: 0.2s;
     border: 0;
     border-radius: 30px;
@@ -96,7 +98,7 @@ section.topo-do-site {
 }
 
 .topo-do-site h1 {
-    color: #B0041A;
+    color: #941223;
     font-size: 42px;
 }
 
@@ -110,14 +112,14 @@ section.topo-do-site {
 
 .topo-do-site .text-topo-site h1 span{
 
-    color: #500711;
+    color: #B0041A;
     font-size: 42px;
 
 }
 
 .topo-do-site .text-topo-site p{
 
-    color: #B0041A;
+    color: rgb(245, 65, 164);
     margin: 40px 0;
 
 }
@@ -147,10 +149,11 @@ section.Especialidades .flex{
 }
 
 .Especialidades .especialidadesbox {
-    color: white;
+    color: #B0041A;
     padding: 40px;
     /* border: 2px solid white; */
     margin-top: 45px;
+    margin-bottom: 18px;
     border-radius: 30px;
     transition: .3s;
 
@@ -169,7 +172,7 @@ section.Especialidades .flex{
 /* Estilos dos ícones dentro das caixas de especialidades */
 .Especialidades .especialidadesbox i {
     font-size: 70px;
-    color: white;
+    color: #ED9BBD;
 }
 
 .Especialidades .especialidadesbox h3{
@@ -204,16 +207,18 @@ section.sobre .flex {
     color: #B0041A;
     line-height: 40px;
     margin-bottom: 20px;
+    margin: 20px 20px;
 }
 
 .sobre .txt-sobre h2 span {
-    color: #ED9BBD;
+    color: #cc162e;
     display: block;
 }
 
 .sobre .txt-sobre p{
     margin: 20px 20px;
     text-align: justify;
+    color: rgb(245, 65, 164);
 }
 
 .sobre .txt-sobre .social button{
@@ -221,18 +226,23 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: white;
+    background-color: #f5089281;
     font-size: 22px;
     margin: 0 5px;
     cursor: pointer;
     transition: .2s;
+    margin-left: 15px;
+}
+
+.sobre .txt-sobre .social i{
+    color: white;
 }
 
 /*Estilo Meus Trabalhos*/
 
 section.Trabalhos{
 
-    padding: 80px;
+    padding: 100px;
     box-shadow: 0 0 40px 10px white;
 
 }
@@ -269,11 +279,11 @@ section.Trabalhos .flex{
     border-radius: 40px;
     display: flex;
     align-items: center;
-    background-color: #ed9bbda9;
+    background-color: #b0041b75;
     justify-content: center;
     font-size: 25px;
     font-weight: 600;
-    color: #B0041A;
+    color: white;
     opacity: 0;
     transition: .5s;
 }
@@ -285,6 +295,7 @@ section.Trabalhos .flex{
 /*Footer*/
 
 footer{
+    background-color: #B0041A;
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px white;
 }
@@ -301,8 +312,15 @@ footer .line-footer{
     border-top: 2px solid white;
 }
 
-footer .line-footer p i{
-    color:#500711;
+footer .line-footer p {
+    color: white;
+    font-size: 22px;
+} 
+
+footer .line-footer i {
+    width: 80px;
+    height: 20px;
+    color: white;
     font-size: 22px;
 } 
 
